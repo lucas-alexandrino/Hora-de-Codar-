@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  
+
+<body>
+  <form id="formCalculadora" onsubmit="calcularArea(event)">
+    <h2>Calculadora de Áreas de Figuras Planas</h2>
+    <label for="forma">Selecione a forma:</label>
+    <select id="forma" name="forma">
+        <option value="retangulo">Retângulo</option>
+        <option value="quadrado">Quadrado</option>
+        <option value="losango">Losango</option>
+        <option value="trapezio">Trapézio</option>
+        <option value="paralelogramo">Paralelogramo</option>
+        <option value="triangulo">Triângulo</option>
+        <option value="circulo">Círculo</option>
+    </select>
+    <label for="valor1">Valor 1:</label>
+    <input type="number" id="valor1" name="valor1" required>
+    <label for="valor2">Valor 2:</label>
+    <input type="number" id="valor2" name="valor2">
+    <input type="submit" value="Calcular">
+  </form>
+
+  <div id="resultado"></div>
+ 
+  <script src="script.js"></script>
+</body>
+
+</html>
